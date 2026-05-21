@@ -50,7 +50,6 @@
 
 html {
   font-size: 16px;
-  font-family: "Montserrat";
   background-color: var(--bg-main);
 }
 
@@ -64,6 +63,11 @@ header {
   z-index: 1000;
   padding-inline: 1.5rem;
   padding-block: 0.5rem;
+}
+
+p {
+  font-size: var(--body-text);
+  font-family: "Montserrat";
 }
 
 /* navigation */
@@ -190,14 +194,19 @@ button {
 /* featured section */
 .featured,
 .cat,
-.trust {
+.trust,
+.rating {
   padding-inline: 1.5rem;
   padding-block: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .featured-header,
 .cat-header,
-.trust-header {
+.trust-header,
+.rating-header {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -208,17 +217,25 @@ button {
 .featured-title,
 .cat-title,
 .about-title,
-.trust-title {
+.trust-title,
+.rating-title {
   display: flex;
   gap: 0.25rem;
+  justify-content: center;
 }
 
 .featured-title > .bx,
 .cat-title > .bx,
 .about-title > .bx,
-.trust-title > .bx {
+.trust-title > .bx,
+.rating-title > .bx {
   color: var(--gold);
   font-size: 1.5rem;
+}
+
+.featured-header > p,
+.cat-header > p {
+  text-align: center;
 }
 
 h2 {
@@ -229,9 +246,10 @@ h2 {
 .featured-deco,
 .cat-deco,
 .about-deco,
-.trust-deco {
+.trust-deco,
+.rating-deco {
   display: flex;
-  width: 50%;
+  width: 100%;
   padding-block: 0.5rem;
   align-items: center;
   justify-content: center;
@@ -241,7 +259,8 @@ h2 {
 .featured-deco > .bx,
 .cat-deco > .bx,
 .about-deco > .bx,
-.trust-deco > .bx {
+.trust-deco > .bx,
+.rating-deco > .bx {
   color: var(--gold);
   font-size: 1.5rem;
 }
@@ -249,7 +268,8 @@ h2 {
 .featured-deco > .line,
 .cat-deco > .line,
 .about-deco > .line,
-.trust-deco > .line {
+.trust-deco > .line,
+.rating-deco > .line {
   background-color: var(--gold);
   width: 25%;
 }
@@ -259,6 +279,7 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   gap: 1rem;
+  max-width: 1200px;
 }
 
 .featured-card {
@@ -267,6 +288,7 @@ h2 {
   border-radius: 1rem;
   overflow: hidden;
   display: flex;
+  max-width: 400px;
 }
 
 .featured-card > img {
@@ -326,12 +348,14 @@ h2 {
 .cat-ctn {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 2rem;
+  max-width: 1200px;
 }
 
 .cat-card {
   border-radius: 1rem;
   width: 100%;
+  max-width: 400px;
   height: auto;
   overflow: hidden;
   background-color: var(--bg-main);
@@ -339,7 +363,7 @@ h2 {
 
 .cat-card > .img-ctn {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 0.75;
   overflow: hidden;
 }
 
@@ -412,6 +436,7 @@ h2 {
 /* About Scentora */
 .about {
   display: flex;
+  gap: 2rem;
 }
 
 .about-info {
@@ -422,11 +447,16 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  justify-content: center;
+}
+
+.about-info > p {
+  text-align: pretty;
 }
 
 .about-img {
   width: 50%;
-  height: 40vh;
+  height: auto;
 }
 
 .about-img > img {
@@ -442,32 +472,228 @@ h2 {
 /* Trust Section - Why Shop with Us */
 .trust {
   background-color: var(--blush);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trust-header > p {
+  width: min(100%, 640px);
+  font-size: var(--body-text);
+  line-height: 1.5;
+  text-align: center;
 }
 
 .trust-ctn {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  max-width: 1200px;
 }
 
 .trust-item {
-  height: 120px;
   width: 100%;
+  min-height: 220px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--bg-main);
   border: 1px solid var(--gold);
-  border-radius: 12px;
+  border-radius: 1rem;
 }
 
+.trust-val {
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+}
 
 .trust-val > .bx {
   background-color: var(--brand-pink);
-  font-size: 42px;
+  color: var(--bg-main);
+  font-size: 2rem;
   border-radius: 50%;
-  padding: 0.25rem;
+  padding: 0.75rem;
+}
+
+.trust-info {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  gap: 0.5rem;
+}
+
+.trust-info > h3 {
+  font-family: "Playfair Display";
+  font-size: var(--product-title);
+}
+
+.trust-info > p {
+  font-size: var(--small-text);
+  line-height: 1.5;
+}
+
+/* Ratings */
+.rating-ctn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+}
+
+.rating-card {
+  width: 100%;
+  min-height: 220px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--bg-main);
+  border: 1px solid var(--gold);
+  border-radius: 1rem;
+}
+
+.rating-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.quote > .bx { 
+  font-size: 3rem;
+}
+
+.star-rating > .bx {
+  font-size: 1.75rem;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.authDetails {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  align-items: center;
+}
+
+.authDetails > p {
+  font-family: "Playfair Display";
+  font-size: var(--product-title);
+}
+
+.rating-img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
 }
 
 /* mobile */
 @media (max-width: 768px) {
   .hero {
     background-image: url("/assets/background.png");
+    justify-content: flex-start;
+    padding-top: 7rem;
+  }
+
+  .hero > p {
+    width: 70%;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-ctn,
+  .cat-ctn,
+  .trust-ctn {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .featured-header,
+  .cat-header,
+  .trust-header {
+    max-width: 400px;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-deco,
+  .cat-deco,
+  .about-deco,
+  .trust-deco {
+    width: 100%;
+  }
+
+  .about-info {
+    width: 100%;
+    padding-inline: 1.5rem;
+    align-items: center;
+    max-width: 400px;
+  }
+
+  .about-info > p {
+    text-align: center;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+  .about-info > button {
+    align-self: center;
+  }
+
+  .trust-ctn {
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  .trust-item {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .hero {
+    padding-inline: 6rem;
+  }
+
+  .about {
+    gap: 4rem;
+  }
+
+  .about-img {
+    aspect-ratio: 1 / 0.75;
+  }
+
+  .about-info {
+    padding-left: 7rem;
+  }
+
+  .trust-ctn {
+    gap: 2rem;
   }
 }
