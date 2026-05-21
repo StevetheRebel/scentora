@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* logo font */
+.courgette-regular {
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* heading */
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+/* body */
+.montserrat-body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400, 500, 600, 700;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+:root {
+  --bg-main: #fff9f5; /* main page background */
+  --text-main: #1f1f1f; /*vheadings, nav links, and product names */
+  --brand-pink: #e8a0b7; /* buttons, highlights and hover effects */
+  --gold: #c9a45c; /* prices, borders, stars or small luxury details */
+  --sage: #a8bfa3; /* category tags or secondary buttons */
+  --blush: #f8e6ea; /* product cards or soft section background */
+
+  /* text sizing */
+  --logo-size: clamp(2rem, 6vw, 4rem);
+  --hero-title: clamp(2.2rem, 7vw, 5rem);
+  --section-title: clamp(1.6rem, 4vw, 2.8rem);
+  --product-title: clamp(1.1rem, 2vw, 1.4rem);
+  --body-text: clamp(1rem, 1.5vw, 1.125rem);
+  --small-text: clamp(0.75rem, 1vw, 0.95rem);
+}
+
+html {
+  font-size: 16px;
+  font-family: "Montserrat";
+  background-color: var(--bg-main);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 72px;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-main);
+  z-index: 1000;
+  padding-inline: 1.5rem;
+  padding-block: 0.5rem;
+}
+
+/* navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* logo */
+.logo {
+  font-family: "Courgette";
+  font-size: var(--logo-size);
+  text-transform: capitalize;
+}
+
+.logo > a {
+  color: var(--brand-pink);
+}
+
+.nav-items {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-items > li > a {
+  font-size: var(--small-text);
+  color: var(--text-main);
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.cart .bx {
+  font-size: 2rem;
+  color: var(--brand-pink);
+}
+
+/* hero section */
+.hero {
+  height: 100dvh;
+  position: relative;
+  background-image: url("/assets/lg-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 1.5rem;
+}
+
+h1 {
+  font-size: var(--hero-title);
+  font-family: "Playfair Display";
+  line-height: 1;
+  letter-spacing: 4px;
+}
+
+h1 > span {
+  color: var(--brand-pink);
+}
+
+.deco {
+  display: flex;
+  width: 50%;
+  padding-block: 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.deco > .bx {
+  color: var(--brand-pink);
+  font-size: 1.5rem;
+}
+
+.line {
+  height: 2px;
+  width: 50%;
+  background-color: var(--brand-pink);
+}
+
+.hero > p {
+  width: 50%;
+  font-size: var(--body-text);
+  line-height: 1.25;
+}
+
+.hero-btns {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  padding-inline: 1.5rem;
+  padding-block: 0.75rem;
+  border: none;
+  border-radius: 1.25rem;
+  font-size: var(--small-text);
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
+}
+
+.primary-btn {
+  color: var(--bg-main);
+  background-color: var(--brand-pink);
+}
+
+.secondary-btn {
+  color: var(--sage);
+  background-color: transparent;
+}
+
+.secondary-btn > .bx {
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+}
+
+/* featured section */
+.featured,
+.cat,
+.trust {
+  padding-inline: 1.5rem;
+  padding-block: 4.5rem;
+}
+
+.featured-header,
+.cat-header,
+.trust-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.featured-title,
+.cat-title,
+.about-title,
+.trust-title {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.featured-title > .bx,
+.cat-title > .bx,
+.about-title > .bx,
+.trust-title > .bx {
+  color: var(--gold);
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-family: "Playfair Display";
+  font-size: var(--section-title);
+}
+
+.featured-deco,
+.cat-deco,
+.about-deco,
+.trust-deco {
+  display: flex;
+  width: 50%;
+  padding-block: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.featured-deco > .bx,
+.cat-deco > .bx,
+.about-deco > .bx,
+.trust-deco > .bx {
+  color: var(--gold);
+  font-size: 1.5rem;
+}
+
+.featured-deco > .line,
+.cat-deco > .line,
+.about-deco > .line,
+.trust-deco > .line {
+  background-color: var(--gold);
+  width: 25%;
+}
+
+.featured-ctn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 1rem;
+}
+
+.featured-card {
+  border: 1px solid var(--gold);
+  min-height: 200px;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.featured-card > img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-detail {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.prod-title {
+  font-size: var(--product-title);
+  font-family: "Playfair Display";
+}
+
+.item-deco {
+  display: flex;
+  width: 85%;
+  padding-block: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.item-deco > .bx {
+  color: var(--gold);
+  font-size: 0.75rem;
+}
+
+.item-deco > .line {
+  background-color: var(--gold);
+  height: 0.5px;
+}
+
+.item-desc,
+.cat-desc {
+  font-size: var(--small-text);
+}
+
+.item-price {
+  font-size: var(--product-title);
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--brand-pink);
+}
+
+.cat {
+  background-color: var(--blush);
+}
+
+.cat-ctn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.cat-card {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: var(--bg-main);
+}
+
+.cat-card > .img-ctn {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.img-ctn > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-ctn > img:hover {
+  transform: scale(1.25);
+  transition-duration: 500ms;
+}
+
+.cat-details {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cat-details > .sign-ctn {
+  height: 2rem;
+  width: 100%;
+  position: relative;
+}
+
+.sign-ctn > .bx-ctn {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 4px solid var(--bg-main);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.bx-ctn1 {
+  background-color: var(--brand-pink);
+}
+
+.bx-ctn2 {
+  background-color: var(--sage);
+}
+
+.bx-ctn3 {
+  background-color: var(--gold);
+}
+
+.bx-ctn > .bx {
+  font-size: 2rem;
+  color: var(--bg-main);
+}
+
+.cat-info > .cat-title {
+  font-size: var(--product-title);
+  font-family: "Playfair Display";
+}
+
+.cat-info {
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding-block: 0.5rem;
+}
+
+/* About Scentora */
+.about {
+  display: flex;
+}
+
+.about-info {
+  width: 50%;
+  height: auto;
+  padding-left: 1.5rem;
+  padding-block: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-img {
+  width: 50%;
+  height: 40vh;
+}
+
+.about-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-info > button {
+  align-self: flex-start;
+}
+
+/* Trust Section - Why Shop with Us */
+.trust {
+  background-color: var(--blush);
+}
+
+.trust-ctn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.trust-item {
+  height: 120px;
+  width: 100%;
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+}
+
+
+.trust-val > .bx {
+  background-color: var(--brand-pink);
+  font-size: 42px;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("/assets/background.png");
+  }
+}
