@@ -22,6 +22,11 @@
       href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
       rel="stylesheet"
     />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
 
   </head>
   <body>
@@ -31,17 +36,31 @@
         <!-- logo -->
         <p class="logo"><a href="#">scentora's</a></p>
 
-        <ul class="nav-items">
+        <ul class="nav-items" id="nav-menu">
           <li><a href="/">home</a></li>
           <li><a href="/shop/">shop</a></li>
           <li><a href="/about/">about</a></li>
           <li><a href="/contact/">contact</a></li>
         </ul>
 
-        <div class="cart">
-          <i class="bx bx-cart-alt"></i>
+        <div class="nav-icons">
+          <button
+            class="menu"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="nav-menu"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark close"></i>
+          </button>
+
+          <div class="cart">
+            <i class="bx bx-cart-alt"></i>
+          </div>
         </div>
       </nav>
     </header>
+    <script src="./../script.js"></script>
   </body>
 </html>
