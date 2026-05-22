@@ -83,6 +83,7 @@ nav {
   font-family: "Courgette";
   font-size: var(--logo-size);
   text-transform: capitalize;
+  color: var(--brand-pink);
 }
 
 .logo > a {
@@ -195,7 +196,8 @@ button {
 .featured,
 .cat,
 .trust,
-.rating {
+.rating,
+.subscribe {
   padding-inline: 1.5rem;
   padding-block: 4.5rem;
   display: flex;
@@ -566,7 +568,7 @@ h2 {
   gap: 2rem;
 }
 
-.quote > .bx { 
+.quote > .bx {
   font-size: 3rem;
 }
 
@@ -594,6 +596,176 @@ h2 {
   border-radius: 50%;
 }
 
+/* Newsletter Subscription */
+.subscribe {
+  height: 40dvh;
+  width: 100%;
+  background-image: url("assets/backgrounds/men-scents-background.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sub-card {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sub-card > h2 {
+  color: var(--bg-main);
+  letter-spacing: 2px;
+}
+
+.sub-card > p {
+  color: var(--bg-main);
+  font-size: var(--small-text);
+}
+
+form {
+  width: 60%;
+}
+
+form > div {
+  display: flex;
+  position: relative;
+  height: 2.75rem;
+  width: 100%;
+  background-color: var(--bg-main);
+  border-radius: 0.5rem;
+}
+
+input {
+  height: 100%;
+  width: 100%;
+  font-size: var(--small-text);
+  padding-inline: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+input::placeholder {
+  letter-spacing: 2px;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+.submit-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: var(--brand-pink);
+  height: 2.75rem;
+  border-radius: 0.5rem;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  padding-inline: 1.5rem;
+  padding-block: 2rem;
+  background-color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-top {
+  display: flex;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gold);
+  max-width: 1200px;
+  width: 100%;
+  gap: 3rem;
+}
+
+.biz-footer > .logo {
+  display: flex;
+  align-items: start;
+}
+
+.biz-footer > p {
+  color: var(--bg-main);
+  font-size: var(--small-text);
+  letter-spacing: 2px;
+}
+
+.logo > .bx {
+  color: var(--gold);
+  font-size: 2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-btn {
+  border: 1px solid var(--gold);
+  color: var(--brand-pink);
+  padding: 0.24rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer-links-ctn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-links > p {
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: var(--product-title);
+  margin-bottom: 0.5rem;
+}
+
+.footer-links > ul > li {
+  margin-block: 0.5rem;
+}
+
+.footer-links > ul > li > a {
+  color: var(--bg-main);
+  font-family: "Montserrat";
+  font-size: var(--small-text);
+}
+
+.footer-links > ul > li > a:hover {
+  color: var(--blush);
+}
+
+.footer-links > ul > li > a > i {
+  font-size: 1rem;
+  color: var(--gold);
+}
+
+.footer-bottom > p {
+  color: var(--bg-main);
+  text-align: center;
+  font-size: var(--small-text);
+}
+
 /* mobile */
 @media (max-width: 768px) {
   .hero {
@@ -619,14 +791,16 @@ h2 {
 
   .featured-ctn,
   .cat-ctn,
-  .trust-ctn {
+  .trust-ctn,
+  .rating-ctn {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
   .featured-header,
   .cat-header,
-  .trust-header {
+  .trust-header,
+  .rating-header {
     max-width: 400px;
   }
 
@@ -666,8 +840,18 @@ h2 {
     gap: 2rem;
   }
 
-  .trust-item {
+  .trust-item,
+  .rating-card {
     max-width: 350px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-links-ctn {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 
