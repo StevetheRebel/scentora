@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Sentora</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./../style.css">
+    <title>Contact | Scentora</title>
+    <link rel="stylesheet" href="./../style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Basic Icons -->
     <link
@@ -33,7 +33,7 @@
     <header>
       <nav>
         <!-- logo -->
-        <p class="logo"><a href="#">scentora's</a></p>
+        <p class="logo"><a href="/">scentora</a></p>
 
         <ul class="nav-items" id="nav-menu">
           <li><a href="/">home</a></li>
@@ -60,6 +60,269 @@
         </div>
       </nav>
     </header>
+
+    <main class="contact-page">
+      <!-- contact hero -->
+      <section class="contact-hero">
+        <div class="contact-hero-text">
+          <p class="eyebrow">Contact Scentora</p>
+          <h1>We would love to hear from you</h1>
+          <div class="contact-deco">
+            <div class="line"></div>
+            <i class="bx bx-heart"></i>
+            <div class="line"></div>
+          </div>
+          <p>
+            Have a question about a perfume, delivery, or choosing the right
+            scent? Send us a message and we will help you find what fits you
+            best.
+          </p>
+        </div>
+
+        <div class="contact-hero-img">
+          <img src="/assets/Trial 1.png" alt="Scentora perfume bottle" />
+        </div>
+      </section>
+
+      <!-- contact methods -->
+      <section class="contact-methods">
+        <div class="section-header">
+          <div class="section-title">
+            <i class="bx bx-sparkles bx-flip-horizontal"></i>
+            <h2>Reach Us</h2>
+            <i class="bx bx-sparkles"></i>
+          </div>
+          <div class="contact-deco">
+            <div class="line"></div>
+            <i class="bx bx-heart"></i>
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <div class="method-grid">
+          <article class="method-card">
+            <div class="method-icon">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p>hello@scentora.com</p>
+          </article>
+
+          <article class="method-card">
+            <div class="method-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h3>Phone</h3>
+            <p>+254 700 000 000</p>
+          </article>
+
+          <article class="method-card">
+            <div class="method-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h3>Location</h3>
+            <p>Nairobi, Kenya</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- contact form -->
+      <section class="contact-form-section">
+        <div class="form-info">
+          <p class="eyebrow">Send a message</p>
+          <h2>Tell us what you need</h2>
+          <p>
+            Use the form to ask about perfume recommendations, order support,
+            delivery, or anything else about Scentora.
+          </p>
+        </div>
+
+        <form class="contact-form" action="" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="emailAddress">Email Address</label>
+              <input
+                type="email"
+                id="emailAddress"
+                name="emailAddress"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number</label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="Enter your phone number"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="topic">Message Topic</label>
+              <select id="topic" name="topic" required>
+                <option value="">Choose a topic</option>
+                <option value="recommendation">Perfume recommendation</option>
+                <option value="order">Order support</option>
+                <option value="delivery">Delivery question</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Write your message here"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="contact-submit">
+            <i class="bx bx-send"></i>
+            Send Message
+          </button>
+        </form>
+      </section>
+
+      <!-- customer care -->
+      <section class="contact-care">
+        <div class="section-header">
+          <div class="section-title">
+            <i class="bx bx-sparkles bx-flip-horizontal"></i>
+            <h2>Customer Care</h2>
+            <i class="bx bx-sparkles"></i>
+          </div>
+          <div class="contact-deco">
+            <div class="line"></div>
+            <i class="bx bx-heart"></i>
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <div class="care-grid">
+          <article class="care-card">
+            <h3>Perfume Help</h3>
+            <p>
+              Need help choosing between floral, fresh, sweet, or bold scents?
+              We can guide you.
+            </p>
+          </article>
+
+          <article class="care-card">
+            <h3>Delivery Support</h3>
+            <p>
+              Ask about delivery areas, timelines, or how your order will reach
+              you.
+            </p>
+          </article>
+
+          <article class="care-card">
+            <h3>Order Questions</h3>
+            <p>
+              Contact us if you need help with a product, gift idea, or order
+              detail.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <!-- business links -->
+        <div class="biz-footer">
+          <h2 class="logo"><span>Scentora</span><i class="bx bx-heart"></i></h2>
+          <p>Discover your signature scent.</p>
+
+          <!-- social media links -->
+          <div class="social-links">
+            <a href="" title="social-instagram" class="social-btn">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="" title="social-facebook " class="social-btn">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="" title="social-tiktok" class="social-btn">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="" title="social-email" class="social-btn">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- short links -->
+        <div class="footer-links-ctn">
+          <!-- quick links -->
+          <div class="footer-links">
+            <p class="footer-header">quick links</p>
+            <ul>
+              <li><a title="home" href="/">Home</a></li>
+              <li><a title="shop" href="/shop/">Shop</a></li>
+              <li><a title="about" href="/about/">About</a></li>
+              <li><a title="contact" href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- customer care -->
+          <div class="footer-links">
+            <p>customer care</p>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Shipping & Delivery</a></li>
+              <li><a href="#">Returns & Refunds</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- contact us -->
+          <div class="footer-links">
+            <p>contact us</p>
+            <ul>
+              <li>
+                <a href="mailto:hello@scentora.com">
+                  <i class="fa-regular fa-envelope"></i> hello@scentora.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:0700000000">
+                  <i class="fa-solid fa-phone"></i> +254 700 000 000
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-location-dot"></i> Nairobi, Kenya
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Scentora. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script src="./../script.js"></script>
   </body>
 </html>
