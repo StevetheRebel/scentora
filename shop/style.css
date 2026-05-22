@@ -1,0 +1,389 @@
+.shop-page {
+  padding-top: 72px;
+  color: var(--text-main);
+}
+
+.shop-hero {
+  min-height: 55dvh;
+  padding: 4.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 249, 245, 0.94),
+      rgba(255, 249, 245, 0.5)
+    ),
+    url("./../assets/backgrounds/catalog-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shop-hero-content {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.eyebrow {
+  color: var(--brand-pink);
+  font-size: var(--small-text);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.shop-hero h1 {
+  font-size: var(--hero-title);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.shop-hero-content > p {
+  max-width: 620px;
+  line-height: 1.6;
+}
+
+.shop-deco {
+  display: flex;
+  width: min(100%, 420px);
+  padding-block: 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.shop-deco > .bx {
+  color: var(--gold);
+  font-size: 1.5rem;
+}
+
+.shop-deco > .line {
+  background-color: var(--gold);
+}
+
+.catalog-section {
+  scroll-margin-top: 88px;
+  padding: 4.5rem 1.5rem;
+  background-color: var(--bg-main);
+}
+
+.catalog-actions {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-toggle {
+  color: var(--bg-main);
+  background-color: var(--brand-pink);
+  cursor: pointer;
+}
+
+.filter-toggle > i {
+  margin-right: 0.35rem;
+}
+
+.shop-filters {
+  display: none;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: var(--blush);
+  border: 1px solid var(--gold);
+  border-radius: 0.5rem;
+}
+
+.shop-filters.show-filters {
+  display: block;
+}
+
+.filter-heading,
+.catalog-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.filter-heading {
+  margin-bottom: 1rem;
+}
+
+.filter-heading h2 {
+  font-size: var(--product-title);
+}
+
+.clear-filter-btn {
+  color: var(--bg-main);
+  background-color: var(--brand-pink);
+  cursor: pointer;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.price-filter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.filter-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-control label {
+  font-family: "Montserrat";
+  font-size: var(--small-text);
+  font-weight: 700;
+}
+
+.filter-control input,
+.filter-control select {
+  width: 100%;
+  height: auto;
+  padding: 0.85rem 1rem;
+  color: var(--text-main);
+  background-color: var(--bg-main);
+  border: 1px solid rgba(201, 164, 92, 0.65);
+  border-radius: 0.5rem;
+  font-family: "Montserrat";
+  font-size: var(--small-text);
+  outline: none;
+}
+
+.filter-control input::placeholder {
+  letter-spacing: 0;
+}
+
+.filter-control input:focus,
+.filter-control select:focus {
+  border-color: var(--brand-pink);
+}
+
+.catalog-toolbar {
+  margin-bottom: 1rem;
+}
+
+.catalog-toolbar > p {
+  font-size: var(--small-text);
+  font-weight: 700;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.product-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blush);
+  border: 1px solid rgba(201, 164, 92, 0.7);
+  border-radius: 0.5rem;
+}
+
+.product-img {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: var(--bg-main);
+}
+
+.product-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 1rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.product-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.product-pill {
+  padding: 0.25rem 0.55rem;
+  color: var(--text-main);
+  background-color: var(--bg-main);
+  border: 1px solid rgba(201, 164, 92, 0.55);
+  border-radius: 999px;
+  font-family: "Montserrat";
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.product-info h3 {
+  font-family: "Playfair Display";
+  font-size: var(--product-title);
+  line-height: 1.1;
+}
+
+.product-desc,
+.product-notes {
+  font-size: var(--small-text);
+  line-height: 1.45;
+}
+
+.product-notes {
+  color: rgba(31, 31, 31, 0.78);
+}
+
+.product-bottom {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.product-price {
+  color: var(--brand-pink);
+  font-family: "Montserrat";
+  font-size: var(--product-title);
+  font-weight: 800;
+}
+
+.product-card button {
+  color: var(--bg-main);
+  background-color: var(--brand-pink);
+  cursor: pointer;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: var(--blush);
+  border: 1px solid var(--gold);
+  border-radius: 0.5rem;
+}
+
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.pagination button {
+  min-width: 2.75rem;
+  justify-content: center;
+  color: var(--text-main);
+  background-color: var(--blush);
+  border: 1px solid var(--gold);
+  cursor: pointer;
+}
+
+.pagination button.active-page {
+  color: var(--bg-main);
+  background-color: var(--brand-pink);
+  border-color: var(--brand-pink);
+}
+
+.pagination button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1120px) {
+  .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .filter-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-hero,
+  .catalog-section {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .shop-hero {
+    min-height: 50dvh;
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 249, 245, 0.96),
+        rgba(255, 249, 245, 0.72)
+      ),
+      url("./../assets/backgrounds/catalog-background.png");
+  }
+
+  .shop-hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .shop-deco {
+    width: 100%;
+  }
+
+  .catalog-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .filter-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .filter-grid,
+  .price-filter {
+    grid-template-columns: 1fr;
+  }
+
+  .product-info {
+    padding: 0.75rem;
+  }
+
+  .product-desc {
+    display: none;
+  }
+
+  .product-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .product-card button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .shop-hero,
+  .catalog-section {
+    padding-inline: 6rem;
+  }
+}

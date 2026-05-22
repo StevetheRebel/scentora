@@ -1,0 +1,1006 @@
+{
+  "brand": "Scentora",
+  "defaultCurrency": "KES",
+  "perfumes": [
+    {
+      "id": "nocturne-cedar",
+      "sku": "SC-MEN-001",
+      "name": "Nocturne Cedar",
+      "category": "Men",
+      "price": 7800,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Woody Leather",
+      "description": "A composed evening scent built around cedar, bright bergamot, and polished leather.",
+      "notes": {
+        "top": ["Bergamot", "Black Pepper"],
+        "heart": ["Cedar", "Violet Leaf"],
+        "base": ["Leather", "Amber", "Dry Woods"]
+      },
+      "accords": ["woody", "leather", "citrus", "warm"],
+      "image": "assets/scentora-perfumes/men/01-nocturne-cedar.png",
+      "featured": true
+    },
+    {
+      "id": "atlas-noir",
+      "sku": "SC-MEN-002",
+      "name": "Atlas Noir",
+      "category": "Men",
+      "price": 8400,
+      "currency": "USD",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Spicy Amber",
+      "description": "Dark vetiver and black pepper meet smooth amber for a bold, architectural signature.",
+      "notes": {
+        "top": ["Black Pepper", "Grapefruit"],
+        "heart": ["Vetiver", "Clary Sage"],
+        "base": ["Amber", "Cedarwood", "Musk"]
+      },
+      "accords": ["spicy", "amber", "earthy", "masculine"],
+      "image": "assets/scentora-perfumes/men/02-atlas-noir.png",
+      "featured": true
+    },
+    {
+      "id": "coastline-drift",
+      "sku": "SC-MEN-003",
+      "name": "Coastline Drift",
+      "category": "Men",
+      "price": 7200,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Toilette",
+      "scentFamily": "Aquatic Aromatic",
+      "description": "Sea salt, sage, and driftwood create a crisp coastal fragrance with easy freshness.",
+      "notes": {
+        "top": ["Sea Salt", "Lemon Zest"],
+        "heart": ["Sage", "Marine Accord"],
+        "base": ["Driftwood", "Clean Musk"]
+      },
+      "accords": ["fresh", "marine", "herbal", "woody"],
+      "image": "assets/scentora-perfumes/men/03-coastline-drift.png",
+      "featured": false
+    },
+    {
+      "id": "ironwood-reserve",
+      "sku": "SC-MEN-004",
+      "name": "Ironwood Reserve",
+      "category": "Men",
+      "price": 9200,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Parfum",
+      "scentFamily": "Woody Gourmand",
+      "description": "Sandalwood, tonka, and tobacco settle into a warm, confident reserve fragrance.",
+      "notes": {
+        "top": ["Cardamom", "Bergamot"],
+        "heart": ["Sandalwood", "Tobacco Leaf"],
+        "base": ["Tonka Bean", "Amber", "Oakwood"]
+      },
+      "accords": ["woody", "tobacco", "warm spicy", "sweet"],
+      "image": "assets/scentora-perfumes/men/04-ironwood-reserve.png",
+      "featured": true
+    },
+    {
+      "id": "ember-vale",
+      "sku": "SC-MEN-005",
+      "name": "Ember Vale",
+      "category": "Men",
+      "price": 8800,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Smoky Oud",
+      "description": "A smoky blend of cardamom, incense, and oud with a glowing resinous finish.",
+      "notes": {
+        "top": ["Cardamom", "Pink Pepper"],
+        "heart": ["Incense", "Rosewood"],
+        "base": ["Oud", "Labdanum", "Amber"]
+      },
+      "accords": ["smoky", "oud", "spicy", "resinous"],
+      "image": "assets/scentora-perfumes/men/05-ember-vale.png",
+      "featured": false
+    },
+    {
+      "id": "alpine-velo",
+      "sku": "SC-MEN-006",
+      "name": "Alpine Velo",
+      "category": "Men",
+      "price": 7000,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Toilette",
+      "scentFamily": "Green Fresh",
+      "description": "Pine, mint, and clean musk deliver a bright, cool scent with mountain-air clarity.",
+      "notes": {
+        "top": ["Mint", "Bergamot"],
+        "heart": ["Pine Needle", "Lavender"],
+        "base": ["Clean Musk", "Cedar"]
+      },
+      "accords": ["green", "fresh", "minty", "clean"],
+      "image": "assets/scentora-perfumes/men/06-alpine-velo.png",
+      "featured": false
+    },
+    {
+      "id": "slate-meridian",
+      "sku": "SC-MEN-007",
+      "name": "Slate Meridian",
+      "category": "Men",
+      "price": 7600,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Mineral Aromatic",
+      "description": "Grapefruit, lavender, and mineral musk form a clean, modern everyday signature.",
+      "notes": {
+        "top": ["Grapefruit", "Juniper"],
+        "heart": ["Lavender", "Mineral Accord"],
+        "base": ["Musk", "Vetiver"]
+      },
+      "accords": ["citrus", "mineral", "aromatic", "clean"],
+      "image": "assets/scentora-perfumes/men/07-slate-meridian.png",
+      "featured": false
+    },
+    {
+      "id": "bourbon-rain",
+      "sku": "SC-MEN-008",
+      "name": "Bourbon Rain",
+      "category": "Men",
+      "price": 8600,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Amber Woody",
+      "description": "Rum, vanilla, and oakwood create a smooth scent with rain-washed warmth.",
+      "notes": {
+        "top": ["Spiced Rum", "Mandarin"],
+        "heart": ["Vanilla", "Cinnamon"],
+        "base": ["Oakwood", "Amber", "Musk"]
+      },
+      "accords": ["boozy", "vanilla", "woody", "warm"],
+      "image": "assets/scentora-perfumes/men/08-bourbon-rain.png",
+      "featured": false
+    },
+    {
+      "id": "northline-musk",
+      "sku": "SC-MEN-009",
+      "name": "Northline Musk",
+      "category": "Men",
+      "price": 7900,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Aromatic Musk",
+      "description": "Juniper, cold spices, and musk give this scent a crisp, steel-blue edge.",
+      "notes": {
+        "top": ["Juniper", "Cold Spices"],
+        "heart": ["Lavender", "Cypress"],
+        "base": ["Musk", "Cedar", "Amber"]
+      },
+      "accords": ["musk", "spicy", "cool", "aromatic"],
+      "image": "assets/scentora-perfumes/men/09-northline-musk.png",
+      "featured": false
+    },
+    {
+      "id": "terra-rogue",
+      "sku": "SC-MEN-010",
+      "name": "Terra Rogue",
+      "category": "Men",
+      "price": 8200,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Earthy Woody",
+      "description": "Patchouli, saffron, and dry woods create an earthy scent with a rebellious warmth.",
+      "notes": {
+        "top": ["Saffron", "Bitter Orange"],
+        "heart": ["Patchouli", "Geranium"],
+        "base": ["Dry Woods", "Amber", "Suede"]
+      },
+      "accords": ["earthy", "woody", "saffron", "dry"],
+      "image": "assets/scentora-perfumes/men/10-terra-rogue.png",
+      "featured": false
+    },
+    {
+      "id": "midnight-signal",
+      "sku": "SC-MEN-011",
+      "name": "Midnight Signal",
+      "category": "Men",
+      "price": 8900,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Leather Tea",
+      "description": "Black tea, leather, and smoked cedar give this fragrance a quiet midnight intensity.",
+      "notes": {
+        "top": ["Black Tea", "Bergamot"],
+        "heart": ["Leather", "Clary Sage"],
+        "base": ["Smoked Cedar", "Amber", "Musk"]
+      },
+      "accords": ["tea", "leather", "smoky", "woody"],
+      "image": "assets/scentora-perfumes/men/11-midnight-signal.png",
+      "featured": true
+    },
+    {
+      "id": "urban-cypress",
+      "sku": "SC-MEN-012",
+      "name": "Urban Cypress",
+      "category": "Men",
+      "price": 7400,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Toilette",
+      "scentFamily": "Citrus Woody",
+      "description": "Cypress, lime, and vetiver sharpen into a clean fragrance for city days.",
+      "notes": {
+        "top": ["Lime", "Grapefruit"],
+        "heart": ["Cypress", "Basil"],
+        "base": ["Vetiver", "Cedarwood"]
+      },
+      "accords": ["citrus", "green", "woody", "fresh"],
+      "image": "assets/scentora-perfumes/men/12-urban-cypress.png",
+      "featured": false
+    },
+    {
+      "id": "copper-dusk",
+      "sku": "SC-MEN-013",
+      "name": "Copper Dusk",
+      "category": "Men",
+      "price": 8000,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Spicy Suede",
+      "description": "Ginger, amber, and suede glow together in a warm scent built for golden hour.",
+      "notes": {
+        "top": ["Ginger", "Bergamot"],
+        "heart": ["Amber", "Nutmeg"],
+        "base": ["Suede", "Sandalwood", "Musk"]
+      },
+      "accords": ["ginger", "amber", "suede", "warm spicy"],
+      "image": "assets/scentora-perfumes/men/13-copper-dusk.png",
+      "featured": false
+    },
+    {
+      "id": "rogue-current",
+      "sku": "SC-MEN-014",
+      "name": "Rogue Current",
+      "category": "Men",
+      "price": 7300,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Toilette",
+      "scentFamily": "Marine Herbal",
+      "description": "A clean marine scent shaped by basil, musk, and a cool current of fresh air.",
+      "notes": {
+        "top": ["Marine Accord", "Lemon"],
+        "heart": ["Basil", "Sage"],
+        "base": ["Musk", "Driftwood"]
+      },
+      "accords": ["marine", "herbal", "clean", "fresh"],
+      "image": "assets/scentora-perfumes/men/14-rogue-current.png",
+      "featured": false
+    },
+    {
+      "id": "blackstone-aura",
+      "sku": "SC-MEN-015",
+      "name": "Blackstone Aura",
+      "category": "Men",
+      "price": 9800,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Parfum",
+      "scentFamily": "Dark Amber Oud",
+      "description": "Oud, labdanum, and dark vanilla create a deep, luxurious aura with lasting power.",
+      "notes": {
+        "top": ["Saffron", "Black Pepper"],
+        "heart": ["Oud", "Labdanum"],
+        "base": ["Dark Vanilla", "Amber", "Patchouli"]
+      },
+      "accords": ["oud", "amber", "vanilla", "dark"],
+      "image": "assets/scentora-perfumes/men/15-blackstone-aura.png",
+      "featured": true
+    },
+    {
+      "id": "solar-flint",
+      "sku": "SC-MEN-016",
+      "name": "Solar Flint",
+      "category": "Men",
+      "price": 7700,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Citrus Woods",
+      "description": "Bergamot, pepper, and warm woods strike a bright, textured masculine balance.",
+      "notes": {
+        "top": ["Bergamot", "Lemon"],
+        "heart": ["Black Pepper", "Geranium"],
+        "base": ["Warm Woods", "Amber", "Musk"]
+      },
+      "accords": ["citrus", "pepper", "woody", "bright"],
+      "image": "assets/scentora-perfumes/men/16-solar-flint.png",
+      "featured": false
+    },
+    {
+      "id": "noble-ash",
+      "sku": "SC-MEN-017",
+      "name": "Noble Ash",
+      "category": "Men",
+      "price": 9100,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Smoky Woods",
+      "description": "Birch smoke, iris, and cedar form a refined smoky scent with a soft powdery edge.",
+      "notes": {
+        "top": ["Birch Smoke", "Bergamot"],
+        "heart": ["Iris", "Cedar"],
+        "base": ["Amber", "Vetiver", "Musk"]
+      },
+      "accords": ["smoky", "woody", "powdery", "refined"],
+      "image": "assets/scentora-perfumes/men/17-noble-ash.png",
+      "featured": false
+    },
+    {
+      "id": "velvet-peony",
+      "sku": "SC-WOM-018",
+      "name": "Velvet Peony",
+      "category": "Women",
+      "price": 7400,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Floral Fruity",
+      "description": "Peony, lychee, and soft musk create a graceful floral scent with a plush finish.",
+      "notes": {
+        "top": ["Lychee", "Pear"],
+        "heart": ["Peony", "Rose"],
+        "base": ["Soft Musk", "White Woods"]
+      },
+      "accords": ["floral", "fruity", "soft", "romantic"],
+      "image": "assets/scentora-perfumes/women/18-velvet-peony.png",
+      "featured": true
+    },
+    {
+      "id": "rosewater-halo",
+      "sku": "SC-WOM-019",
+      "name": "Rosewater Halo",
+      "category": "Women",
+      "price": 7600,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Fresh Floral",
+      "description": "Rose, mandarin, and white amber make a radiant floral scent with a clean glow.",
+      "notes": {
+        "top": ["Mandarin", "Pink Pepper"],
+        "heart": ["Rose", "Rosewater"],
+        "base": ["White Amber", "Musk"]
+      },
+      "accords": ["rose", "fresh", "citrus", "clean"],
+      "image": "assets/scentora-perfumes/women/19-rosewater-halo.png",
+      "featured": true
+    },
+    {
+      "id": "moonlit-iris",
+      "sku": "SC-WOM-020",
+      "name": "Moonlit Iris",
+      "category": "Women",
+      "price": 8200,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Powdery Floral",
+      "description": "Iris, violet, and creamy sandalwood come together in a soft, moonlit floral.",
+      "notes": {
+        "top": ["Violet Leaf", "Bergamot"],
+        "heart": ["Iris", "Violet"],
+        "base": ["Sandalwood", "Musk", "Vanilla"]
+      },
+      "accords": ["iris", "powdery", "floral", "creamy"],
+      "image": "assets/scentora-perfumes/women/20-moonlit-iris.png",
+      "featured": false
+    },
+    {
+      "id": "golden-nectar",
+      "sku": "SC-WOM-021",
+      "name": "Golden Nectar",
+      "category": "Women",
+      "price": 8800,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Floral Gourmand",
+      "description": "Honey, orange blossom, and vanilla create a warm fragrance with luminous sweetness.",
+      "notes": {
+        "top": ["Orange Blossom", "Mandarin"],
+        "heart": ["Honey", "Neroli"],
+        "base": ["Vanilla", "Amber", "Musk"]
+      },
+      "accords": ["honey", "white floral", "vanilla", "warm"],
+      "image": "assets/scentora-perfumes/women/21-golden-nectar.png",
+      "featured": true
+    },
+    {
+      "id": "silk-magnolia",
+      "sku": "SC-WOM-022",
+      "name": "Silk Magnolia",
+      "category": "Women",
+      "price": 7300,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Soft Floral",
+      "description": "Magnolia, pear, and white woods make an elegant scent with a silky, airy trail.",
+      "notes": {
+        "top": ["Pear", "Bergamot"],
+        "heart": ["Magnolia", "Freesia"],
+        "base": ["White Woods", "Musk"]
+      },
+      "accords": ["floral", "pear", "soft", "woody"],
+      "image": "assets/scentora-perfumes/women/22-silk-magnolia.png",
+      "featured": false
+    },
+    {
+      "id": "blush-mirage",
+      "sku": "SC-WOM-023",
+      "name": "Blush Mirage",
+      "category": "Women",
+      "price": 7500,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Fruity Floral",
+      "description": "Raspberry, jasmine, and musk create a bright blush-toned scent with easy charm.",
+      "notes": {
+        "top": ["Raspberry", "Pink Grapefruit"],
+        "heart": ["Jasmine", "Peony"],
+        "base": ["Musk", "White Amber"]
+      },
+      "accords": ["raspberry", "jasmine", "fruity", "soft"],
+      "image": "assets/scentora-perfumes/women/23-blush-mirage.png",
+      "featured": false
+    },
+    {
+      "id": "saffron-bloom",
+      "sku": "SC-WOM-024",
+      "name": "Saffron Bloom",
+      "category": "Women",
+      "price": 9400,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Parfum",
+      "scentFamily": "Floral Amber",
+      "description": "Saffron, rose, and amber create a deep floral scent with a warm golden core.",
+      "notes": {
+        "top": ["Saffron", "Mandarin"],
+        "heart": ["Rose", "Jasmine"],
+        "base": ["Amber", "Sandalwood", "Musk"]
+      },
+      "accords": ["saffron", "rose", "amber", "luxurious"],
+      "image": "assets/scentora-perfumes/women/24-saffron-bloom.png",
+      "featured": true
+    },
+    {
+      "id": "pearl-garden",
+      "sku": "SC-WOM-025",
+      "name": "Pearl Garden",
+      "category": "Women",
+      "price": 7000,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Toilette",
+      "scentFamily": "Clean Floral",
+      "description": "Lily, green tea, and clean musk make a fresh garden scent with a pearl-soft feel.",
+      "notes": {
+        "top": ["Green Tea", "Bergamot"],
+        "heart": ["Lily", "White Petals"],
+        "base": ["Clean Musk", "Cedar"]
+      },
+      "accords": ["clean", "green tea", "floral", "fresh"],
+      "image": "assets/scentora-perfumes/women/25-pearl-garden.png",
+      "featured": false
+    },
+    {
+      "id": "opal-kiss",
+      "sku": "SC-WOM-026",
+      "name": "Opal Kiss",
+      "category": "Women",
+      "price": 7800,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Fruity Musk",
+      "description": "Peach, freesia, and vanilla musk create a luminous scent with a soft opal sheen.",
+      "notes": {
+        "top": ["Peach", "Mandarin"],
+        "heart": ["Freesia", "Jasmine"],
+        "base": ["Vanilla Musk", "White Amber"]
+      },
+      "accords": ["peach", "floral", "vanilla", "musky"],
+      "image": "assets/scentora-perfumes/women/26-opal-kiss.png",
+      "featured": false
+    },
+    {
+      "id": "cherry-veil",
+      "sku": "SC-WOM-027",
+      "name": "Cherry Veil",
+      "category": "Women",
+      "price": 8400,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Fruity Gourmand",
+      "description": "Cherry, almond, and tonka create a rich red scent with a soft gourmand veil.",
+      "notes": {
+        "top": ["Cherry", "Bitter Almond"],
+        "heart": ["Rose", "Jasmine"],
+        "base": ["Tonka Bean", "Vanilla", "Musk"]
+      },
+      "accords": ["cherry", "almond", "sweet", "gourmand"],
+      "image": "assets/scentora-perfumes/women/27-cherry-veil.png",
+      "featured": true
+    },
+    {
+      "id": "fleur-lumiere",
+      "sku": "SC-WOM-028",
+      "name": "Fleur Lumiere",
+      "category": "Women",
+      "price": 7900,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Solar Floral",
+      "description": "Neroli, jasmine, and solar musk make a bright floral scent with sunlit polish.",
+      "notes": {
+        "top": ["Neroli", "Bergamot"],
+        "heart": ["Jasmine", "Orange Blossom"],
+        "base": ["Solar Musk", "Amber"]
+      },
+      "accords": ["neroli", "jasmine", "solar", "fresh"],
+      "image": "assets/scentora-perfumes/women/28-fleur-lumiere.png",
+      "featured": false
+    },
+    {
+      "id": "amethyst-rain",
+      "sku": "SC-WOM-029",
+      "name": "Amethyst Rain",
+      "category": "Women",
+      "price": 8600,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Fruity Woods",
+      "description": "Plum, violet, and cashmere wood create a polished scent with a cool purple mood.",
+      "notes": {
+        "top": ["Plum", "Blackcurrant"],
+        "heart": ["Violet", "Iris"],
+        "base": ["Cashmere Wood", "Musk", "Amber"]
+      },
+      "accords": ["plum", "violet", "woody", "soft"],
+      "image": "assets/scentora-perfumes/women/29-amethyst-rain.png",
+      "featured": false
+    },
+    {
+      "id": "vanilla-muse",
+      "sku": "SC-WOM-030",
+      "name": "Vanilla Muse",
+      "category": "Women",
+      "price": 8000,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Creamy Gourmand",
+      "description": "Vanilla orchid, caramel, and musk make a soft gourmand scent with elegant comfort.",
+      "notes": {
+        "top": ["Vanilla Orchid", "Pear"],
+        "heart": ["Caramel", "Jasmine"],
+        "base": ["Musk", "Sandalwood", "Amber"]
+      },
+      "accords": ["vanilla", "caramel", "creamy", "soft"],
+      "image": "assets/scentora-perfumes/women/30-vanilla-muse.png",
+      "featured": true
+    },
+    {
+      "id": "rose-quartz",
+      "sku": "SC-WOM-031",
+      "name": "Rose Quartz",
+      "category": "Women",
+      "price": 7700,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Rose Woods",
+      "description": "Rose, pink pepper, and cedar create a modern floral scent with a clear quartz edge.",
+      "notes": {
+        "top": ["Pink Pepper", "Mandarin"],
+        "heart": ["Rose", "Peony"],
+        "base": ["Cedar", "Musk", "Amber"]
+      },
+      "accords": ["rose", "pepper", "woody", "modern"],
+      "image": "assets/scentora-perfumes/women/31-rose-quartz.png",
+      "featured": false
+    },
+    {
+      "id": "nectarine-lace",
+      "sku": "SC-WOM-032",
+      "name": "Nectarine Lace",
+      "category": "Women",
+      "price": 7200,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Toilette",
+      "scentFamily": "Fruity Floral",
+      "description": "Nectarine, gardenia, and white amber create a delicate scent with airy sweetness.",
+      "notes": {
+        "top": ["Nectarine", "Mandarin"],
+        "heart": ["Gardenia", "Freesia"],
+        "base": ["White Amber", "Musk"]
+      },
+      "accords": ["nectarine", "gardenia", "fruity", "delicate"],
+      "image": "assets/scentora-perfumes/women/32-nectarine-lace.png",
+      "featured": false
+    },
+    {
+      "id": "midnight-dahlia",
+      "sku": "SC-WOM-033",
+      "name": "Midnight Dahlia",
+      "category": "Women",
+      "price": 9000,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Dark Floral",
+      "description": "Dahlia, blackcurrant, and patchouli create a dramatic floral scent for evening.",
+      "notes": {
+        "top": ["Blackcurrant", "Plum"],
+        "heart": ["Dahlia", "Rose"],
+        "base": ["Patchouli", "Amber", "Musk"]
+      },
+      "accords": ["dark floral", "blackcurrant", "patchouli", "evening"],
+      "image": "assets/scentora-perfumes/women/33-midnight-dahlia.png",
+      "featured": false
+    },
+    {
+      "id": "cloud-jasmine",
+      "sku": "SC-WOM-034",
+      "name": "Cloud Jasmine",
+      "category": "Women",
+      "price": 7500,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Soft White Floral",
+      "description": "Jasmine, coconut milk, and musk create a soft white floral with cloudlike comfort.",
+      "notes": {
+        "top": ["Coconut Milk", "Bergamot"],
+        "heart": ["Jasmine", "White Petals"],
+        "base": ["Musk", "Sandalwood"]
+      },
+      "accords": ["jasmine", "coconut", "soft", "creamy"],
+      "image": "assets/scentora-perfumes/women/34-cloud-jasmine.png",
+      "featured": false
+    },
+    {
+      "id": "amber-theory",
+      "sku": "SC-UNI-035",
+      "name": "Amber Theory",
+      "category": "Unisex",
+      "price": 8200,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Amber Woody",
+      "description": "Amber, bergamot, and cedar create a versatile signature with clean warmth.",
+      "notes": {
+        "top": ["Bergamot", "Mandarin"],
+        "heart": ["Amber", "Cedar"],
+        "base": ["Musk", "Sandalwood"]
+      },
+      "accords": ["amber", "woody", "citrus", "versatile"],
+      "image": "assets/scentora-perfumes/unisex/35-amber-theory.png",
+      "featured": true
+    },
+    {
+      "id": "rain-library",
+      "sku": "SC-UNI-036",
+      "name": "Rain Library",
+      "category": "Unisex",
+      "price": 7600,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Clean Woods",
+      "description": "Paper accord, rain, and sandalwood evoke a quiet library after fresh rainfall.",
+      "notes": {
+        "top": ["Rain Accord", "Bergamot"],
+        "heart": ["Paper Accord", "Iris"],
+        "base": ["Sandalwood", "Musk", "Cedar"]
+      },
+      "accords": ["rain", "paper", "woody", "clean"],
+      "image": "assets/scentora-perfumes/unisex/36-rain-library.png",
+      "featured": false
+    },
+    {
+      "id": "citrus-archive",
+      "sku": "SC-UNI-037",
+      "name": "Citrus Archive",
+      "category": "Unisex",
+      "price": 7000,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Toilette",
+      "scentFamily": "Citrus Aromatic",
+      "description": "Lemon zest, neroli, and vetiver make a bright citrus scent with a crisp finish.",
+      "notes": {
+        "top": ["Lemon Zest", "Grapefruit"],
+        "heart": ["Neroli", "Petitgrain"],
+        "base": ["Vetiver", "Musk"]
+      },
+      "accords": ["citrus", "neroli", "fresh", "green"],
+      "image": "assets/scentora-perfumes/unisex/37-citrus-archive.png",
+      "featured": false
+    },
+    {
+      "id": "desert-glass",
+      "sku": "SC-UNI-038",
+      "name": "Desert Glass",
+      "category": "Unisex",
+      "price": 8800,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Mineral Amber",
+      "description": "Mineral amber, fig, and dry woods create a sun-warmed scent with sculptural clarity.",
+      "notes": {
+        "top": ["Fig", "Pink Pepper"],
+        "heart": ["Mineral Amber", "Iris"],
+        "base": ["Dry Woods", "Musk", "Cedar"]
+      },
+      "accords": ["mineral", "amber", "fig", "dry woods"],
+      "image": "assets/scentora-perfumes/unisex/38-desert-glass.png",
+      "featured": true
+    },
+    {
+      "id": "green-static",
+      "sku": "SC-UNI-039",
+      "name": "Green Static",
+      "category": "Unisex",
+      "price": 7200,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Toilette",
+      "scentFamily": "Green Musk",
+      "description": "Basil, mint, and white musk deliver a vivid green fragrance with electric freshness.",
+      "notes": {
+        "top": ["Mint", "Lime"],
+        "heart": ["Basil", "Green Leaves"],
+        "base": ["White Musk", "Cedar"]
+      },
+      "accords": ["green", "mint", "basil", "fresh"],
+      "image": "assets/scentora-perfumes/unisex/39-green-static.png",
+      "featured": false
+    },
+    {
+      "id": "smoke-and-tea",
+      "sku": "SC-UNI-040",
+      "name": "Smoke & Tea",
+      "category": "Unisex",
+      "price": 8600,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Smoky Tea",
+      "description": "Black tea, incense, and vanilla create a contemplative scent with soft smoke.",
+      "notes": {
+        "top": ["Black Tea", "Bergamot"],
+        "heart": ["Incense", "Clove"],
+        "base": ["Vanilla", "Sandalwood", "Musk"]
+      },
+      "accords": ["tea", "smoky", "vanilla", "warm"],
+      "image": "assets/scentora-perfumes/unisex/40-smoke-and-tea.png",
+      "featured": true
+    },
+    {
+      "id": "solar-fig",
+      "sku": "SC-UNI-041",
+      "name": "Solar Fig",
+      "category": "Unisex",
+      "price": 8000,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Green Woody",
+      "description": "Fig leaf, coconut, and cedar create a warm green fragrance with sunlit ease.",
+      "notes": {
+        "top": ["Fig Leaf", "Bergamot"],
+        "heart": ["Coconut", "Green Accord"],
+        "base": ["Cedar", "Musk", "Amber"]
+      },
+      "accords": ["fig", "green", "coconut", "woody"],
+      "image": "assets/scentora-perfumes/unisex/41-solar-fig.png",
+      "featured": false
+    },
+    {
+      "id": "cloud-resin",
+      "sku": "SC-UNI-042",
+      "name": "Cloud Resin",
+      "category": "Unisex",
+      "price": 9000,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Parfum",
+      "scentFamily": "Resinous Woods",
+      "description": "Frankincense, musk, and soft woods float together in a calm resinous fragrance.",
+      "notes": {
+        "top": ["Frankincense", "Pink Pepper"],
+        "heart": ["Musk", "Iris"],
+        "base": ["Soft Woods", "Amber", "Cedar"]
+      },
+      "accords": ["resin", "musk", "woody", "soft"],
+      "image": "assets/scentora-perfumes/unisex/42-cloud-resin.png",
+      "featured": false
+    },
+    {
+      "id": "paper-moon",
+      "sku": "SC-UNI-043",
+      "name": "Paper Moon",
+      "category": "Unisex",
+      "price": 7800,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Powdery Clean",
+      "description": "Orris, clean linen, and cedar create a quiet scent with soft paperlike texture.",
+      "notes": {
+        "top": ["Clean Linen", "Bergamot"],
+        "heart": ["Orris", "Violet Leaf"],
+        "base": ["Cedar", "Musk", "Amber"]
+      },
+      "accords": ["powdery", "linen", "clean", "cedar"],
+      "image": "assets/scentora-perfumes/unisex/43-paper-moon.png",
+      "featured": false
+    },
+    {
+      "id": "ocean-sable",
+      "sku": "SC-UNI-044",
+      "name": "Ocean Sable",
+      "category": "Unisex",
+      "price": 8400,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Marine Woods",
+      "description": "Sea salt, ambergris-style musk, and woods create a dark marine scent with depth.",
+      "notes": {
+        "top": ["Sea Salt", "Bergamot"],
+        "heart": ["Ambergris-Style Musk", "Sage"],
+        "base": ["Driftwood", "Cedar", "Musk"]
+      },
+      "accords": ["marine", "musky", "woody", "salty"],
+      "image": "assets/scentora-perfumes/unisex/44-ocean-sable.png",
+      "featured": false
+    },
+    {
+      "id": "ginger-theory",
+      "sku": "SC-UNI-045",
+      "name": "Ginger Theory",
+      "category": "Unisex",
+      "price": 7400,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Toilette",
+      "scentFamily": "Spicy Citrus",
+      "description": "Ginger, lime, and amber musk make a zesty fragrance with clean warmth.",
+      "notes": {
+        "top": ["Ginger", "Lime"],
+        "heart": ["Cardamom", "Neroli"],
+        "base": ["Amber Musk", "Cedar"]
+      },
+      "accords": ["ginger", "lime", "spicy", "fresh"],
+      "image": "assets/scentora-perfumes/unisex/45-ginger-theory.png",
+      "featured": false
+    },
+    {
+      "id": "moss-signal",
+      "sku": "SC-UNI-046",
+      "name": "Moss Signal",
+      "category": "Unisex",
+      "price": 7900,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Mossy Woods",
+      "description": "Oakmoss, grapefruit, and vetiver create a grounded green fragrance with citrus lift.",
+      "notes": {
+        "top": ["Grapefruit", "Bergamot"],
+        "heart": ["Oakmoss", "Green Leaves"],
+        "base": ["Vetiver", "Cedar", "Musk"]
+      },
+      "accords": ["mossy", "grapefruit", "vetiver", "green"],
+      "image": "assets/scentora-perfumes/unisex/46-moss-signal.png",
+      "featured": false
+    },
+    {
+      "id": "white-ember",
+      "sku": "SC-UNI-047",
+      "name": "White Ember",
+      "category": "Unisex",
+      "price": 8700,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Soft Smoky Woods",
+      "description": "White smoke, vanilla, and sandalwood create a pale ember scent with quiet warmth.",
+      "notes": {
+        "top": ["White Smoke", "Bergamot"],
+        "heart": ["Vanilla", "Iris"],
+        "base": ["Sandalwood", "Amber", "Musk"]
+      },
+      "accords": ["smoky", "vanilla", "sandalwood", "soft"],
+      "image": "assets/scentora-perfumes/unisex/47-white-ember.png",
+      "featured": false
+    },
+    {
+      "id": "neon-grove",
+      "sku": "SC-UNI-048",
+      "name": "Neon Grove",
+      "category": "Unisex",
+      "price": 7300,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Toilette",
+      "scentFamily": "Citrus Green",
+      "description": "Yuzu, basil, and cedar create a bright modern scent with crisp green energy.",
+      "notes": {
+        "top": ["Yuzu", "Lemon"],
+        "heart": ["Basil", "Mint"],
+        "base": ["Cedar", "White Musk"]
+      },
+      "accords": ["yuzu", "basil", "citrus", "green"],
+      "image": "assets/scentora-perfumes/unisex/48-neon-grove.png",
+      "featured": false
+    },
+    {
+      "id": "velvet-concrete",
+      "sku": "SC-UNI-049",
+      "name": "Velvet Concrete",
+      "category": "Unisex",
+      "price": 8500,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Eau de Parfum",
+      "scentFamily": "Mineral Musk",
+      "description": "Violet leaf, musk, and mineral woods create a smooth urban scent with tactile depth.",
+      "notes": {
+        "top": ["Violet Leaf", "Bergamot"],
+        "heart": ["Mineral Woods", "Iris"],
+        "base": ["Musk", "Amber", "Cedar"]
+      },
+      "accords": ["mineral", "violet leaf", "musk", "urban"],
+      "image": "assets/scentora-perfumes/unisex/49-velvet-concrete.png",
+      "featured": false
+    },
+    {
+      "id": "santal-air",
+      "sku": "SC-UNI-050",
+      "name": "Santal Air",
+      "category": "Unisex",
+      "price": 9200,
+      "currency": "KES",
+      "volumeMl": 50,
+      "concentration": "Parfum",
+      "scentFamily": "Sandalwood Amber",
+      "description": "Sandalwood, iris, and clean amber create a calm, premium scent with airy warmth.",
+      "notes": {
+        "top": ["Iris", "Bergamot"],
+        "heart": ["Sandalwood", "Cedar"],
+        "base": ["Clean Amber", "Musk", "Tonka Bean"]
+      },
+      "accords": ["sandalwood", "amber", "iris", "clean"],
+      "image": "assets/scentora-perfumes/unisex/50-santal-air.png",
+      "featured": true
+    }
+  ]
+}

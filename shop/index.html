@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop | Sentora</title>
-        <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./../style.css">
+    <title>Shop | Scentora</title>
+    <link rel="stylesheet" href="./../style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Basic Icons -->
     <link
@@ -27,14 +27,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
-
   </head>
   <body>
     <!-- navigation -->
     <header>
       <nav>
         <!-- logo -->
-        <p class="logo"><a href="#">scentora's</a></p>
+        <p class="logo"><a href="/">scentora</a></p>
 
         <ul class="nav-items" id="nav-menu">
           <li><a href="/">home</a></li>
@@ -61,6 +60,189 @@
         </div>
       </nav>
     </header>
+
+    <main class="shop-page">
+      <!-- shop hero -->
+      <section class="shop-hero">
+        <div class="shop-hero-content">
+          <p class="eyebrow">Scentora Collection</p>
+          <h1>Shop perfumes by mood, style, and scent</h1>
+          <div class="shop-deco">
+            <div class="line"></div>
+            <i class="bx bx-heart"></i>
+            <div class="line"></div>
+          </div>
+          <p>
+            Browse our perfume catalog and filter by category, scent family,
+            concentration, or price range.
+          </p>
+        </div>
+      </section>
+
+      <!-- shop filters and products -->
+      <section class="catalog-section" id="catalogSection">
+        <div class="catalog-actions">
+          <button
+            type="button"
+            class="filter-toggle"
+            id="filterToggle"
+            aria-controls="shopFilters"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-filter"></i>
+            Filters
+          </button>
+        </div>
+
+        <aside class="shop-filters" id="shopFilters" aria-label="Product filters">
+          <div class="filter-heading">
+            <h2>Filter Products</h2>
+            <button type="button" id="clearFilters" class="clear-filter-btn">
+              Clear
+            </button>
+          </div>
+
+          <div class="filter-grid">
+            <div class="filter-control">
+              <label for="categoryFilter">Category</label>
+              <select id="categoryFilter">
+                <option value="">All categories</option>
+              </select>
+            </div>
+
+            <div class="filter-control">
+              <label for="scentFamilyFilter">Scent Family</label>
+              <select id="scentFamilyFilter">
+                <option value="">All scent families</option>
+              </select>
+            </div>
+
+            <div class="filter-control">
+              <label for="concentrationFilter">Concentration</label>
+              <select id="concentrationFilter">
+                <option value="">All concentrations</option>
+              </select>
+            </div>
+
+            <div class="price-filter">
+              <div class="filter-control">
+                <label for="minPriceFilter">Min Price</label>
+                <input
+                  type="number"
+                  id="minPriceFilter"
+                  min="0"
+                  placeholder="Min"
+                />
+              </div>
+
+              <div class="filter-control">
+                <label for="maxPriceFilter">Max Price</label>
+                <input
+                  type="number"
+                  id="maxPriceFilter"
+                  min="0"
+                  placeholder="Max"
+                />
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <div class="catalog-results">
+          <div class="catalog-toolbar">
+            <p id="resultCount">Loading perfumes...</p>
+            <p id="pageStatus">Page 1</p>
+          </div>
+
+          <div class="product-grid" id="productGrid"></div>
+
+          <div
+            class="pagination"
+            id="pagination"
+            aria-label="Product pagination"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <!-- business links -->
+        <div class="biz-footer">
+          <h2 class="logo"><span>Scentora</span><i class="bx bx-heart"></i></h2>
+          <p>Discover your signature scent.</p>
+
+          <!-- social media links -->
+          <div class="social-links">
+            <a href="" title="social-instagram" class="social-btn">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="" title="social-facebook " class="social-btn">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="" title="social-tiktok" class="social-btn">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="" title="social-email" class="social-btn">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- short links -->
+        <div class="footer-links-ctn">
+          <!-- quick links -->
+          <div class="footer-links">
+            <p class="footer-header">quick links</p>
+            <ul>
+              <li><a title="home" href="/">Home</a></li>
+              <li><a title="shop" href="/shop/">Shop</a></li>
+              <li><a title="about" href="/about/">About</a></li>
+              <li><a title="contact" href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- customer care -->
+          <div class="footer-links">
+            <p>customer care</p>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Shipping & Delivery</a></li>
+              <li><a href="#">Returns & Refunds</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- contact us -->
+          <div class="footer-links">
+            <p>contact us</p>
+            <ul>
+              <li>
+                <a href="mailto:hello@scentora.com">
+                  <i class="fa-regular fa-envelope"></i> hello@scentora.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:0700000000">
+                  <i class="fa-solid fa-phone"></i> +254 700 000 000
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-location-dot"></i> Nairobi, Kenya
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Scentora. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script src="./../script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
