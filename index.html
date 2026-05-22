@@ -41,8 +41,15 @@
           <li><a href="/contact/">contact</a></li>
         </ul>
 
-        <div class="cart">
-          <i class="bx bx-cart-alt"></i>
+        <div class="nav-icons">
+          <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars-staggered close"></i>
+          </div>
+
+          <div class="cart">
+            <i class="bx bx-cart-alt"></i>
+          </div>
         </div>
       </nav>
     </header>
@@ -65,12 +72,16 @@
       </p>
 
       <div class="hero-btns">
-        <button type="button" class="primary-btn">
-          <i class="bx bx-shopping-bag-alt"></i> Shop Now
-        </button>
-        <button type="button" class="secondary-btn">
-          Explore Collection <i class="bx bx-arrow-right"></i>
-        </button>
+        <a href="/shop/">
+          <button type="button" class="primary-btn">
+            <i class="bx bx-shopping-bag-alt"></i> Shop Now
+          </button>
+        </a>
+        <a href="#cat">
+          <button type="button" class="secondary-btn">
+            Explore Collection <i class="bx bx-arrow-right"></i>
+          </button>
+        </a>
       </div>
     </section>
 
@@ -191,7 +202,7 @@
     </section>
 
     <!-- shop by category -->
-    <section class="cat">
+    <section class="cat" id="cat">
       <!-- header -->
       <div class="cat-header">
         <div class="cat-title">
@@ -232,36 +243,11 @@
               <p class="cat-desc">Soft, floral, sweet, and elegant scents.</p>
             </div>
 
-            <button type="button" class="secondary-btn">
-              Shop now <i class="bx bx-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-
-        <!-- male -->
-        <div class="cat-card">
-          <!-- category image -->
-          <div class="img-ctn">
-            <img src="/assets/Trial 1.png" alt="" />
-          </div>
-
-          <!-- category details -->
-          <div class="cat-details">
-            <div class="sign-ctn">
-              <!-- sign -->
-              <div class="bx-ctn bx-ctn2">
-                <i class="bx bx-male"></i>
-              </div>
-            </div>
-
-            <div class="cat-info">
-              <p class="cat-title">Women's Perfume</p>
-              <p class="cat-desc">Soft, floral, sweet, and elegant scents.</p>
-            </div>
-
-            <button type="button" class="secondary-btn">
-              Shop now <i class="bx bx-arrow-right"></i>
-            </button>
+            <a href="/shop/">
+              <button type="button" class="secondary-btn">
+                Shop now <i class="bx bx-arrow-right"></i>
+              </button>
+            </a>
           </div>
         </div>
 
@@ -282,13 +268,48 @@
             </div>
 
             <div class="cat-info">
-              <p class="cat-title">Women's Perfume</p>
-              <p class="cat-desc">Soft, floral, sweet, and elegant scents.</p>
+              <p class="cat-title">Unisex Scents</p>
+              <p class="cat-desc">
+                Balanced perfumes mae for anyone who loves unque aromas.
+              </p>
             </div>
 
-            <button type="button" class="secondary-btn">
-              Shop now <i class="bx bx-arrow-right"></i>
-            </button>
+            <a href="shop/">
+              <button type="button" class="primary-btn">
+                Shop now <i class="bx bx-arrow-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- male -->
+        <div class="cat-card">
+          <!-- category image -->
+          <div class="img-ctn">
+            <img src="/assets/Trial 1.png" alt="" />
+          </div>
+
+          <!-- category details -->
+          <div class="cat-details">
+            <div class="sign-ctn">
+              <!-- sign -->
+              <div class="bx-ctn bx-ctn2">
+                <i class="bx bx-male"></i>
+              </div>
+            </div>
+
+            <div class="cat-info">
+              <p class="cat-title">Men's Perfume</p>
+              <p class="cat-desc">
+                Fresh, bold, woody and confident fragrances.
+              </p>
+            </div>
+
+            <a href="shop/">
+              <button type="button" class="secondary-btn">
+                Shop now <i class="bx bx-arrow-right"></i>
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -324,7 +345,9 @@
           helps you find a scent that feels like you.
         </p>
 
-        <button type="button" class="primary-btn">Learn More About Us</button>
+        <a href="/about/">
+          <button type="button" class="primary-btn">Learn More About Us</button>
+        </a>
       </div>
 
       <!-- image -->
@@ -575,11 +598,11 @@
           <div class="footer-links">
             <p class="footer-header">quick links</p>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="/shop/">Shop</a></li>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/contact/">Contact</a></li>
-              <li><a href="/cart/"></a></li>
+              <li><a title="home" href="#">Home</a></li>
+              <li><a title="shop" href="/shop/">Shop</a></li>
+              <li><a title="about" href="/about/">About</a></li>
+              <li><a title="contact" href="/contact/">Contact</a></li>
+              <li><a title="cart" href="/cart/"></a></li>
             </ul>
           </div>
 
@@ -601,17 +624,17 @@
             <ul>
               <li>
                 <a href="mailto:hello@scentora.com"
-                  ><i class="fa-regular fa-envelope" ></i> hello@scentora.com</a
+                  ><i class="fa-regular fa-envelope"></i> hello@scentora.com</a
                 >
               </li>
               <li>
                 <a href="tel:0700000000"
-                  ><i class="fa-solid fa-phone" ></i> +254 700 000 000</a
+                  ><i class="fa-solid fa-phone"></i> +254 700 000 000</a
                 >
               </li>
               <li>
                 <a href="#"
-                  ><i class="fa-solid fa-location-dot" ></i> Nairobi, Kenya</a
+                  ><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</a
                 >
               </li>
             </ul>

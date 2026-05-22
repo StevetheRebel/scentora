@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 /* logo font */
@@ -103,6 +104,10 @@ nav {
   font-weight: 600;
 }
 
+.menu {
+  display: none;
+}
+
 .cart .bx {
   font-size: 2rem;
   color: var(--brand-pink);
@@ -182,7 +187,7 @@ button {
   background-color: var(--brand-pink);
 }
 
-.secondary-btn {
+.primary-btn .secondary-btn {
   color: var(--sage);
   background-color: transparent;
 }
@@ -334,6 +339,8 @@ h2 {
 .item-desc,
 .cat-desc {
   font-size: var(--small-text);
+  width: 80%;
+  text-align: center;
 }
 
 .item-price {
@@ -361,6 +368,7 @@ h2 {
   height: auto;
   overflow: hidden;
   background-color: var(--bg-main);
+  padding-bottom: 1rem;
 }
 
 .cat-card > .img-ctn {
@@ -386,6 +394,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 
 .cat-details > .sign-ctn {
@@ -449,6 +458,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: start;
   justify-content: center;
 }
 
@@ -465,10 +475,6 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.about-info > button {
-  align-self: flex-start;
 }
 
 /* Trust Section - Why Shop with Us */
@@ -625,11 +631,13 @@ h2 {
 
 .sub-card > h2 {
   color: var(--bg-main);
+  text-align: center;
   letter-spacing: 2px;
 }
 
 .sub-card > p {
   color: var(--bg-main);
+  text-align: center;
   font-size: var(--small-text);
 }
 
@@ -654,6 +662,7 @@ input {
   background-color: transparent;
   border: none;
   outline: none;
+  border-radius: 0.5rem;
 }
 
 input::placeholder {
@@ -672,6 +681,7 @@ input:focus {
   background-color: var(--brand-pink);
   height: 2.75rem;
   border-radius: 0.5rem;
+  letter-spacing: 2px;
 }
 
 /* footer */
@@ -768,6 +778,30 @@ footer {
 
 /* mobile */
 @media (max-width: 768px) {
+  .menu {
+    display: block;
+  }
+
+  .menu > .close {
+    display: none;
+  }
+
+  .menu > i {
+    font-size: 1.75rem;
+    color: var(--brand-pink);
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .nav-icons {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
   .hero {
     background-image: url("/assets/background.png");
     justify-content: flex-start;
@@ -807,6 +841,7 @@ footer {
   .about {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
 
   .featured-deco,
@@ -819,6 +854,7 @@ footer {
   .about-info {
     width: 100%;
     padding-inline: 1.5rem;
+    padding-bottom: 1rem;
     align-items: center;
     max-width: 400px;
   }
@@ -843,6 +879,14 @@ footer {
   .trust-item,
   .rating-card {
     max-width: 350px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input::placeholder {
+    letter-spacing: 0;
   }
 
   .footer-top {
