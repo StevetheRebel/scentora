@@ -34,7 +34,7 @@
         <!-- logo -->
         <p class="logo"><a href="#">scentora</a></p>
 
-        <ul class="nav-items">
+        <ul class="nav-items" id="nav-menu">
           <li><a href="/">home</a></li>
           <li><a href="/shop/">shop</a></li>
           <li><a href="/about/">about</a></li>
@@ -42,10 +42,16 @@
         </ul>
 
         <div class="nav-icons">
-          <div class="menu">
+          <button
+            class="menu"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="nav-menu"
+            aria-expanded="false"
+          >
             <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-bars-staggered close"></i>
-          </div>
+            <i class="fa-solid fa-xmark close"></i>
+          </button>
 
           <div class="cart">
             <i class="bx bx-cart-alt"></i>
