@@ -20,7 +20,15 @@
 
 .contact-hero {
   min-height: calc(100dvh - 72px);
-  background-color: var(--bg-main);
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 249, 245, 0.94),
+      rgba(255, 249, 245, 0.5)
+    ),
+    url("/assets/backgrounds/contact-newsletter-background.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
 }
 
 .contact-hero-text,
@@ -67,19 +75,6 @@
 
 .contact-deco > .line {
   background-color: var(--gold);
-}
-
-.contact-hero-img {
-  overflow: hidden;
-  aspect-ratio: 1 / 1;
-  border: 1px solid var(--gold);
-  border-radius: 1rem;
-}
-
-.contact-hero-img > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .contact-methods,

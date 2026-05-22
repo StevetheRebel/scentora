@@ -324,6 +324,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  justify-content: space-between
 }
 
 .prod-title {
@@ -350,11 +351,21 @@ h2 {
   height: 0.5px;
 }
 
-.item-desc,
-.cat-desc {
+.item-desc {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
   font-size: var(--small-text);
-  width: 80%;
-  text-align: center;
+}
+
+.item-meta {
+  color: var(--sage);
+  font-size: 8px;
+  font-weight: 700;
+  text-align: start;
 }
 
 .item-price {
@@ -362,6 +373,19 @@ h2 {
   font-weight: 700;
   letter-spacing: -1px;
   color: var(--brand-pink);
+}
+
+.item-detail > .primary-btn {
+  align-self: start;
+}
+
+.featured-error {
+  grid-column: 1 / -1;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--blush);
+  border: 1px solid var(--gold);
+  border-radius: 1rem;
 }
 
 .cat {
@@ -456,6 +480,12 @@ h2 {
   align-items: center;
   gap: 0.5rem;
   padding-block: 0.5rem;
+}
+
+.cat-desc {
+  text-align: center;
+  width: 80%;
+  font-size: var(--small-text);
 }
 
 /* About Scentora */
