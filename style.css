@@ -122,9 +122,51 @@ nav {
   display: none;
 }
 
+.cart {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+}
+
 .cart .bx {
   font-size: 2rem;
   color: var(--brand-pink);
+}
+
+.cart-count {
+  min-width: 1.15rem;
+  height: 1.15rem;
+  display: none;
+  place-items: center;
+  position: absolute;
+  top: -0.35rem;
+  right: -0.45rem;
+  padding-inline: 0.25rem;
+  color: var(--bg-main);
+  background-color: var(--gold);
+  border-radius: 999px;
+  font-family: "Montserrat";
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.cart-count.show-count {
+  display: grid;
+}
+
+.cart-message {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 1200;
+  padding: 0.85rem 1rem;
+  color: var(--bg-main);
+  background-color: var(--brand-pink);
+  border-radius: 0.75rem;
+  box-shadow: 0 12px 24px rgba(31, 31, 31, 0.18);
+  font-family: "Montserrat";
+  font-size: var(--small-text);
+  font-weight: 700;
 }
 
 /* hero section */

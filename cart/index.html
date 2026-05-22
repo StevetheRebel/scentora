@@ -3,7 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart | Sentora</title>
+    <title>Cart | Scentora</title>
+    <link rel="stylesheet" href="./../style.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Basic Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Filled Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
+      rel="stylesheet"
+    />
+    <!-- Brand Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- navigation -->
+    <header>
+      <nav>
+        <!-- logo -->
+        <p class="logo"><a href="/">scentora</a></p>
+
+        <ul class="nav-items" id="nav-menu">
+          <li><a href="/">home</a></li>
+          <li><a href="/shop/">shop</a></li>
+          <li><a href="/about/">about</a></li>
+          <li><a href="/contact/">contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+          <button
+            class="menu"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="nav-menu"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark close"></i>
+          </button>
+
+          <a href="/cart/" class="cart" aria-label="View cart">
+            <i class="bx bx-cart-alt"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="cart-page">
+      <section class="cart-hero">
+        <p class="eyebrow">Your Cart</p>
+        <h1>Review your scent selection</h1>
+        <div class="cart-deco">
+          <div class="line"></div>
+          <i class="bx bx-heart"></i>
+          <div class="line"></div>
+        </div>
+        <p>
+          Adjust quantities, remove perfumes, or continue shopping for your next
+          signature scent.
+        </p>
+      </section>
+
+      <section class="cart-layout">
+        <div class="cart-items" id="cartItems"></div>
+
+        <aside class="cart-summary">
+          <h2>Order Summary</h2>
+          <div class="summary-row">
+            <span>Items</span>
+            <strong id="summaryItems">0</strong>
+          </div>
+          <div class="summary-row">
+            <span>Total</span>
+            <strong id="summaryTotal">KES 0</strong>
+          </div>
+          <button type="button" class="checkout-btn">Checkout</button>
+          <button type="button" class="clear-cart-btn" id="clearCart">
+            Clear Cart
+          </button>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <!-- business links -->
+        <div class="biz-footer">
+          <h2 class="logo"><span>Scentora</span><i class="bx bx-heart"></i></h2>
+          <p>Discover your signature scent.</p>
+
+          <!-- social media links -->
+          <div class="social-links">
+            <a href="" title="social-instagram" class="social-btn">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="" title="social-facebook " class="social-btn">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="" title="social-tiktok" class="social-btn">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="" title="social-email" class="social-btn">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- short links -->
+        <div class="footer-links-ctn">
+          <!-- quick links -->
+          <div class="footer-links">
+            <p class="footer-header">quick links</p>
+            <ul>
+              <li><a title="home" href="/">Home</a></li>
+              <li><a title="shop" href="/shop/">Shop</a></li>
+              <li><a title="about" href="/about/">About</a></li>
+              <li><a title="contact" href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- customer care -->
+          <div class="footer-links">
+            <p>customer care</p>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Shipping & Delivery</a></li>
+              <li><a href="#">Returns & Refunds</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- contact us -->
+          <div class="footer-links">
+            <p>contact us</p>
+            <ul>
+              <li>
+                <a href="mailto:hello@scentora.com">
+                  <i class="fa-regular fa-envelope"></i> hello@scentora.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:0700000000">
+                  <i class="fa-solid fa-phone"></i> +254 700 000 000
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-location-dot"></i> Nairobi, Kenya
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Scentora. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./../script.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

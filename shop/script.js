@@ -156,7 +156,16 @@ function createProductCard(perfume) {
 
         <div class="product-bottom">
           <p class="product-price">${formatPrice(perfume)}</p>
-          <button type="button">
+          <button
+            type="button"
+            data-cart-id="${escapeHtml(perfume.id)}"
+            data-cart-name="${escapeHtml(perfume.name)}"
+            data-cart-price="${perfume.price}"
+            data-cart-currency="${escapeHtml(perfume.currency)}"
+            data-cart-image="${escapeHtml(perfume.image)}"
+            data-cart-category="${escapeHtml(perfume.category)}"
+            data-cart-concentration="${escapeHtml(perfume.concentration)}"
+          >
             <i class="bx bx-shopping-bag-alt"></i>
             Add
           </button>
