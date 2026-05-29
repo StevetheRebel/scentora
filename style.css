@@ -862,6 +862,10 @@ footer {
   font-size: var(--small-text);
 }
 
+.footer-bottom > p > a {
+  color: var(--brand-pink);
+}
+
 /* mobile */
 @media (max-width: 768px) {
   .menu {
